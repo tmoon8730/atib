@@ -17,7 +17,7 @@ More information to come
 
 ##Code Style
 ----------
-You should follow the code style guidelines in  [CONTRIBUTING.md](https://github.com/tmoon8730/atib/master/CONTRIBUTING.md), as well as other best practices.
+You should follow the code style guidelines in  [CONTRIBUTING.md](https://github.com/tmoon8730/atib/blob/master/CONTRIBUTING.md), as well as other best practices.
 
 ##How to Build
 ------------------
