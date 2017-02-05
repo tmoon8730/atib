@@ -26,8 +26,8 @@ ATIB is licensed under the MIT license, and we welcome anybody to fork and submi
 
 ## Contributors
 
-  Tyler Moon
-  Lawton Mizell
+- Tyler Moon
+- Lawton Mizell
 
 ## License
 
