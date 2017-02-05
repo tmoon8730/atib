@@ -17,7 +17,7 @@ More information to come
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request and put Tyler Moon as the reviewer :D
 
-ATIB is licensed under the MIT license, and we welcome anybody to fork and submit a Pull Request back with their changes. To contribute code, please check out[GETTING-STARTED.md](https://github.com/tmoon8730/atib/master/GETTING-STARTED.md)and [CONTRIBUTING.md](https://github.com/tmoon8730/atib/master/CONTRIBUTING.md) for more details.
+ATIB is licensed under the MIT license, and we welcome anybody to fork and submit a Pull Request back with their changes. To contribute code, please check out [GETTING-STARTED.md](https://github.com/tmoon8730/atib/master/GETTING-STARTED.md) and [CONTRIBUTING.md](https://github.com/tmoon8730/atib/master/CONTRIBUTING.md) for more details.
 
 ## History
 
