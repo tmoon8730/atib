@@ -13,9 +13,10 @@ More information to come
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b atib-mynewfeature-myname`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request and put Tyler Moon as the reviewer :D
+3. Set up the needed [properties files](https://github.com/tmoon8730/atib/wiki/Property-Files#needed-property-files)
+4. Commit your changes: `git commit -am 'Add some feature'`
+5. Push to the branch: `git push origin my-new-feature`
+6. Submit a pull request and put Tyler Moon as the reviewer :D
 
 ATIB is licensed under the MIT license, and we welcome anybody to fork and submit a Pull Request back with their changes. To contribute code, please check out [GETTING-STARTED.md](https://github.com/tmoon8730/atib/blob/master/GETTING-STARTED.md) and [CONTRIBUTING.md](https://github.com/tmoon8730/atib/blob/master/CONTRIBUTING.md) for more details.
 
