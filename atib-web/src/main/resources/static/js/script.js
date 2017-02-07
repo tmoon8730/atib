@@ -30,11 +30,13 @@
     // create the controller and inject Angular's $scope
     atibApp.controller('mainController', function($scope) {
         // create a message to display in our view
-        $scope.message = 'Automated Trump Information Bot.';
+        $scope.image = [{
+        	src: 'img/trump-pepe-frog2.png',
+        }];
     });
 
     atibApp.controller('aboutController', function($scope) {
-        $scope.message = 'About.';
+        $scope.message = 'The purpose of this project is to build a web application that gathers information and data relating to the United States 46th President Donald Trump. This is a strictly data oriented project and is not a political statement. This project is to remain as un-biased as possible in its purpose of displaying data. The referenced data can include, but is not limited to, news articles, Twitter statistics and tweets, Facebook posts, and any other information that could be relevant. This project will attempt to accumulate all this data in an automated fashion with limited input from the creators.';
     });
 
     atibApp.controller('contactController', function($scope) {

@@ -1,0 +1,18 @@
+#content {
+	text-align: left;
+  	width:960px; 
+  	height:auto;
+  	padding:10px;
+}
+
+#content:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.about-images {
+	display: inline-block;
+	padding-left: 100px;
+}

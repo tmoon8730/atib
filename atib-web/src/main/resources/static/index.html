@@ -1,51 +1,66 @@
 <!-- index.html -->
-    <!DOCTYPE html>
-     <!-- define angular app -->
-    <html ng-app="atibApp">
-    <html>
-    <head>
-      <!-- SCROLLS -->
-      <!-- load bootstrap and fontawesome via CDN -->
-      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+<!DOCTYPE html>
+<!-- define angular app -->
+<html ng-app="atibApp">
+<html>
+<head>
+<!-- SCROLLS -->
+<!-- load bootstrap and fontawesome via CDN -->
+<link rel="stylesheet"
+	href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+<link rel="stylesheet"
+	href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
 
-      <!-- SPELLS -->
-      <!-- load angular and angular route via CDN -->
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-          <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-      <script src="js/script.js"></script>
-    </head>
-    <body>
-    
-     <!-- define angular controller -->
-    <body ng-controller="mainController">
+<!-- custom css stylesheet -->
+<link rel="stylesheet" type="text/css" href="css/about.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
 
-        <!-- HEADER AND NAVBAR -->
-        <header>
-            <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="/">A.T.I.B</a>
-                </div>
 
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
-                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
-                </ul>
-            </div>
-            </nav>
-        </header>
+<!-- SPELLS -->
+<!-- load angular and angular route via CDN -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script
+	src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+<script src="js/script.js"></script>
+</head>
+<body>
 
-        <!-- MAIN CONTENT AND INJECTED VIEWS -->
-        <div id="main">
-			<h1><p>{{ message }}</p></h1>
-			
-            <!-- angular templating -->
-            <!-- this is where content will be injected -->
-            <div ng-view></div>
+	<!-- define angular controller -->
+<body ng-controller="mainController">
 
-        </div>
+	<!-- HEADER AND NAVBAR -->
+	<header>
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">Automated Trump Information Bot</a>
+				</div>
 
-    </body>
-    </html>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+					<li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+					<li><a href="#contact"><i class="fa fa-comment"></i>
+							Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- MAIN CONTENT AND INJECTED VIEWS -->
+	<div id="main">
+		<div id=mainImage>
+			<h1>
+				<p>{{ message }}</p>
+			</h1>
+			<img ng-src="{{image[0].src}}" width="300" height="200" />
+		</div>
+
+		<!-- angular templating -->
+		<!-- this is where content will be injected -->
+		<div ng-view></div>
+
+	</div>
+
+</body>
+</html>
