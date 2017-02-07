@@ -1,7 +1,7 @@
 # A.T.I.B (Automated Trump Information Bot)
 
 ## Purpose
-The purpose of this project is to build a web application that gathers information and data relating to the United States 46th President Donald Trump. This is a strictly data oriented project and is **not** a political statement. This project is to remain as un-biased as possible in its purpose of displaying data. The referenced data can include, but is not limited to, news articles, Twitter statistics and tweets, Facebook posts, and any other information that could be relevant. This project will attempt to accumulate all this data in an automated fashion with limited input from the creators.
+The purpose of this project is to build a web application that gathers information and data relating to the United States 45th President Donald Trump. This is a strictly data oriented project and is **not** a political statement. This project is to remain as un-biased as possible in its purpose of displaying data. The referenced data can include, but is not limited to, news articles, Twitter statistics and tweets, Facebook posts, and any other information that could be relevant. This project will attempt to accumulate all this data in an automated fashion with limited input from the creators.
 
 ## Installation
 More information to come
