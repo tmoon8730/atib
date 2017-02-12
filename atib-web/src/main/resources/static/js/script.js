@@ -49,5 +49,5 @@
     });
     
     atibApp.controller('contributeController', function($scope) {
-        $scope.message = 'Contribute.';
+        $scope.message = 'Feel like contributing to A.T.I.B ?';
     });

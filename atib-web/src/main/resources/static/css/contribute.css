@@ -1,0 +1,23 @@
+a.button {
+    background-color: #222222; /* black */
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    color: White;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid #222222; /* Green */
+}
+
+
+.button:hover {
+    background-color: #FFFFFF; /* white */
+    color: black;
+}
+
+#contribute {
+	 
+}
