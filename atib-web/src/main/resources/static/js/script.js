@@ -24,6 +24,11 @@
             .when('/contact', {
                 templateUrl : 'pages/contact.html',
                 controller  : 'contactController'
+            })
+        
+            .when('/contribute', {
+            	templateUrl : 'pages/contribute.html',
+            	controller  : 'contributeController'
             });
     });
 
@@ -41,4 +46,8 @@
 
     atibApp.controller('contactController', function($scope) {
         $scope.message = 'Contact us.';
+    });
+    
+    atibApp.controller('contributeController', function($scope) {
+        $scope.message = 'Contribute.';
     });
