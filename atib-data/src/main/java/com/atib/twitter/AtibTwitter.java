@@ -52,6 +52,22 @@ public class AtibTwitter {
 		return stringFromList(tweets);
 	}
 	
+	public String searchUser(String userName){
+		int page = 1;
+		ResponseList<User> users = null;
+		try{
+			do{
+				users = twitter.searchUsers(userName, page);
+				page++;
+			}while (users.size() != 0 && page < 50);
+			System.out.println("done");
+		}catch(TwitterException te){
+			te.printStackTrace();
+			System.out.println("Failed to search users: " + te.getMessage());
+		}
+		return stringFromListUsers(users);
+	}
+	
 	private String stringFromList(List<Status> statuses){
 		// Collect data into a string to return
 		StringBuilder strBldr = new StringBuilder();
@@ -59,6 +75,24 @@ public class AtibTwitter {
 			strBldr.append(status.getUser().getScreenName());     // Screen name of the user who posted the tweet
 			strBldr.append(" - "); 								  // Delimiter
 			strBldr.append(status.getText());                     // Contents of the tweet
+			strBldr.append("\n");								  // Newline
+		}
+		// Return the String from the StringBuilder strBldr
+		return strBldr.toString();
+	}
+	private String stringFromListUsers(List<User> users){
+		// Collect data into a string to return
+		StringBuilder strBldr = new StringBuilder();
+		for(User status: users){
+			strBldr.append(status.getScreenName());     // Screen name of the user who posted the tweet
+			if(status.getStatus() != null){
+				strBldr.append(" - "); 								  // Delimiter
+				strBldr.append(status.getStatus().getText());     
+			}else{
+				// The users account is protected
+				strBldr.append("protected");
+			}
+			// Contents of the tweet
 			strBldr.append("\n");								  // Newline
 		}
 		// Return the String from the StringBuilder strBldr
