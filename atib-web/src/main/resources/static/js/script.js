@@ -45,7 +45,7 @@
     });
 
     atibApp.controller('contactController', function($scope) {
-        $scope.message = 'Contact us.';
+        $scope.message = '';
     });
     
     atibApp.controller('contributeController', function($scope) {
